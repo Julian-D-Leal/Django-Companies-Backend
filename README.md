@@ -1,3 +1,7 @@
+# Lite prueba
+
+##Instalación
+
 Para ejecutar la app se deben instalar las dependencias con el siguiente comando:
 pip install -r requirements.txt
 
