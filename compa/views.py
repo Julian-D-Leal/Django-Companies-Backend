@@ -27,7 +27,8 @@ class CompanyViewSet(viewsets.ModelViewSet):
                 return Response({'error': 'the company has associted products, It cannot be deleted'}, status=status.HTTP_400_BAD_REQUEST)
         except Product.DoesNotExist:
             return Response({'error': 'Product not found'}, status=status.HTTP_404_NOT_FOUND)
-        return super().destroy(request, *args, **kwargs)
+        super().destroy(request, *args, **kwargs)
+        return Response({'message': 'Company deleted successfully'})
     
 #inventario
 class CompanyProductView(generics.ListAPIView):
