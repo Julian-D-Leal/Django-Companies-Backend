@@ -4,11 +4,11 @@
 
 Se debe crear un virtual environment. 
 
-Para ejecutar la app se deben instalar las dependencias con el siguiente comando:
+Para ejecutar la app se deben instalar las dependencias con el siguiente comando:  
 pip install -r requirements.txt
 
-Realizar la migración de base de datos con el siguiente comando:
+Ejecutar las migraciones de la base de datos con el siguiente comando:  
 Python manage.py migrate
 
-Y por último ejecutar el servidor con el siguiente comando:
+Y por último ejecutar el servidor con el siguiente comando:  
 python manage.py runserver
