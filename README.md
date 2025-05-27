@@ -2,8 +2,13 @@
 
 ## Instalación
 
+Se debe crear un virtual environment. 
+
 Para ejecutar la app se deben instalar las dependencias con el siguiente comando:
 pip install -r requirements.txt
 
-luego de instalar todas las librerías se puede iniciar la app con el siguiente comando:
+Realizar la migración de base de datos con el siguiente comando:
+Python manage.py migrate
+
+Y por último ejecutar el servidor con el siguiente comando:
 python manage.py runserver
